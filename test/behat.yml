@@ -21,3 +21,15 @@ default:
         right sidebar: "#column-right"
       text:
         log_out: "Logout"
+
+local:
+  extensions:
+    Drupal\DrupalExtension\Extension:
+      drush:
+        root: "../../dkan"
+
+travis:
+  extensions:
+    Drupal\DrupalExtension\Extension:
+      drush:
+        root: "../../../sites/default"
